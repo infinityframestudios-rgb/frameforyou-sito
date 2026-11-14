@@ -86,7 +86,15 @@ footer .tag{margin-top:2px}
 .faq summary:after{content:"+";position:absolute;right:4px;top:14px;color:var(--gold);font:400 24px Montserrat,sans-serif;transition:transform .2s}
 .faq details[open] summary:after{transform:rotate(45deg)}
 .faq details p{color:var(--muted);font-size:15.5px;padding:0 0 20px}
+
+.tutte{margin-top:42px}
+.tutte > p.intro{max-width:620px;margin-top:12px;color:var(--muted);font-size:15.5px}
+.fun{display:grid;gap:0;margin-top:22px;border-top:1px solid var(--line)}
+.fun div{padding:14px 0;border-bottom:1px solid var(--line)}
+.fun h3{font:700 16px/1.3 "Playfair Display",Georgia,serif;color:#fff;margin-bottom:3px}
+.fun p{color:var(--muted);font-size:14.5px}
 @media(min-width:720px){
+ .fun{grid-template-columns:1fr 1fr;column-gap:48px}
  .points{grid-template-columns:1fr 1fr;column-gap:48px}
  .grid{grid-template-columns:1fr 1fr}
  .steps{grid-template-columns:repeat(3,1fr)}
@@ -96,7 +104,7 @@ footer .tag{margin-top:2px}
  .float{display:none}
  footer{padding-bottom:30px}
 }
-@media(min-width:980px){.grid{grid-template-columns:repeat(3,1fr)}.grid.wide{grid-template-columns:1fr 1fr}.steps.four{grid-template-columns:repeat(4,1fr)}}
+@media(min-width:980px){.grid{grid-template-columns:repeat(3,1fr)}.grid.wide{grid-template-columns:1fr 1fr}.fun{grid-template-columns:repeat(3,1fr)}.steps.four{grid-template-columns:repeat(4,1fr)}}
 </style>
 </head>
 <body>
@@ -143,16 +151,42 @@ footer .tag{margin-top:2px}
   <p class="kicker">Cosa trovi dentro</p>
   <h2>Dal primo contatto <em>alla consegna</em></h2>
   <div class="grid wide">
-   <div class="item"><span class="n">01</span><h3>Eventi e agenda</h3><p>Ogni lavoro ha la sua scheda: sposi o famiglia, data, chiesa, sala e orari della giornata, dalla preparazione al taglio della torta. Puoi dividere l'evento in fasce e assegnare a ciascuna lo staff che serve, fotografi e operatori video. L'agenda mostra il mese a colpo d'occhio, così sai sempre chi è impegnato e dove.</p></div>
-   <div class="item"><span class="n">02</span><h3>Preventivi</h3><p>Il cliente può compilare un modulo con i propri dati e le richieste per l'evento. Da lì componi il preventivo con pacchetti, extra e album, e lo invii con un link. Il cliente lo legge dal telefono e lo firma con il dito; l'acconto ricevuto lo segni nel preventivo e tu vedi tutto aggiornato nella scheda.</p></div>
+   <div class="item"><span class="n">01</span><h3>Eventi e agenda</h3><p>Ogni lavoro ha la sua scheda: sposi o famiglia, data, chiesa, sala e orari della giornata, dalla preparazione al taglio della torta. Puoi dividere l'evento in fasce e indicare lo staff, fotografi e operatori video. L'agenda mostra il mese a colpo d'occhio, così sai sempre chi è impegnato e dove.</p></div>
+   <div class="item"><span class="n">02</span><h3>Preventivi</h3><p>Il cliente può compilare un modulo con i propri dati e le richieste per l'evento. Da lì componi il preventivo con pacchetti, extra e album, e lo invii con un link breve. Il cliente lo legge dal telefono e lo firma con il dito; l'acconto ricevuto lo segni nel preventivo e tu vedi tutto aggiornato nella scheda.</p></div>
    <div class="item"><span class="n">03</span><h3>Contratti</h3><p>Il contratto si genera dal preventivo accettato, con le clausole dello studio. Puoi partire dai PDF che usi già e allegare documenti come liberatorie o regolamenti della sala. Tutto resta archiviato nella scheda dell'evento, pronto da ritrovare quando serve.</p></div>
    <div class="item"><span class="n">04</span><h3>Incassi e acconti</h3><p>Per ogni evento registri acconti e saldi e prepari le ricevute. Una vista riepilogativa mostra entrate e uscite per periodo, quanto è già stato incassato e quanto resta da riscuotere, anche per i lavori svolti in conto terzi.</p></div>
-   <div class="item"><span class="n">05</span><h3>Gallerie online</h3><p>Carichi le foto e invii al cliente un link con il suo codice, anche direttamente su WhatsApp. Gli sposi sfogliano la galleria dal telefono, scelgono le foto per l'album e scaricano quelle consegnate. Le scelte arrivano a te già ordinate, senza elenchi di numeri scritti a mano.</p></div>
-   <div class="item"><span class="n">06</span><h3>Impaginatore album</h3><p>Monti l'album direttamente nell'app, partendo da oltre 500 modelli di pagina. Con lo stesso strumento prepari inviti, biglietti e partecipazioni. I file si esportano a 300 dpi, pronti per il laboratorio di stampa.</p></div>
+   <div class="item"><span class="n">05</span><h3>Gallerie online</h3><p>Carichi le foto e invii al cliente un link con il suo codice, anche direttamente su WhatsApp. Gli sposi sfogliano la galleria dal telefono, scelgono le foto per l'album e scaricano quelle consegnate. Le scelte arrivano a te già ordinate: dal computer puoi copiare le foto scelte, già in qualità, senza elenchi di numeri scritti a mano.</p></div>
+   <div class="item"><span class="n">06</span><h3>Impaginatore album</h3><p>Monti l'album direttamente nell'app, con oltre 400 modelli di pagina e 26 misure, ognuna col suo prezzo. Con lo stesso strumento prepari inviti, biglietti e partecipazioni. I file escono a 300 dpi, pronti per il laboratorio di stampa.</p></div>
    <div class="item"><span class="n">07</span><h3>Consegne e avvisi</h3><p>Imposti entro quanti mesi dall'evento vanno consegnati album e video, e ogni quanti giorni vuoi ricevere un promemoria. L'app ti avvisa finché la consegna non è segnata come fatta, così nessun lavoro resta indietro.</p></div>
    <div class="item"><span class="n">08</span><h3>Note sincronizzate</h3><p>Appunti su un cliente, una location o una richiesta particolare: le note si salvano nella scheda e le ritrovi su ogni dispositivo, anche se le hai scritte dal telefono durante un sopralluogo.</p></div>
    <div class="item"><span class="n">09</span><h3>Backup e sincronizzazione</h3><p>I dati dello studio si sincronizzano tra telefono, tablet e computer e vengono salvati anche online. Se cambi dispositivo o ne perdi uno, il lavoro non va perso.</p></div>
    <div class="item"><span class="n">10</span><h3>Si installa come un'app</h3><p>Si apre dal browser e si aggiunge alla schermata Home con un tocco, senza passare dagli store. Da quel momento si usa come qualsiasi altra app, con la propria icona, e si aggiorna da sola.</p></div>
+  </div>
+
+  <div class="tutte">
+   <p class="kicker">Tutte le funzioni</p>
+   <p class="intro">Se vuoi vederle tutte insieme, ecco quello che c'è in app, dal primo contatto alla consegna.</p>
+   <div class="fun">
+    <div><h3>Eventi e agenda</h3><p>Scheda di ogni lavoro, fasce della giornata e calendario del mese.</p></div>
+    <div><h3>Staff e squadra</h3><p>Quante persone servono sul servizio, e i collaboratori collegati all'evento.</p></div>
+    <div><h3>Modulo cliente</h3><p>Il cliente compila da solo i dati e le richieste per l'evento.</p></div>
+    <div><h3>Preventivi</h3><p>Pacchetti, extra e album. Il cliente firma dal telefono; l'acconto lo segni tu quando lo ricevi.</p></div>
+    <div><h3>Link breve</h3><p>Il preventivo arriva al cliente con un indirizzo corto, facile da aprire e da mandare.</p></div>
+    <div><h3>Contratti e clausole</h3><p>Si preparano dal preventivo accettato. Puoi caricare anche i PDF che usi già.</p></div>
+    <div><h3>Incassi e ricevute</h3><p>Acconti, saldi e ricevute. Entrate e uscite per giorno, settimana, mese o anno.</p></div>
+    <div><h3>Conto terzi</h3><p>I lavori fatti per altri studi, con pagamenti e quanto resta da riscuotere.</p></div>
+    <div><h3>Gallerie online</h3><p>Link al cliente, anche su WhatsApp, con un codice per entrare.</p></div>
+    <div><h3>Scelte in qualità</h3><p>Il cliente sceglie le foto per l'album; tu le copi dal disco già in qualità.</p></div>
+    <div><h3>Impaginatore album</h3><p>Oltre 400 modelli e 26 misure, ognuna col suo prezzo. I file escono a 300 dpi, pronti per la stampa.</p></div>
+    <div><h3>Inviti e biglietti</h3><p>Con lo stesso strumento prepari inviti, partecipazioni e biglietti di ringraziamento.</p></div>
+    <div><h3>Poster e stampe</h3><p>Poster 50×70 nell'impaginatore, e le stampe tra gli extra del preventivo.</p></div>
+    <div><h3>Galleria video</h3><p>Nei piani che la prevedono, una galleria per far vedere i video ai clienti.</p></div>
+    <div><h3>Consegne e avvisi</h3><p>Scadenze e promemoria, finché album e video non sono segnati come consegnati.</p></div>
+    <div><h3>Note</h3><p>Appunti sullo studio o su un cliente, sincronizzati su ogni dispositivo.</p></div>
+    <div><h3>Backup e sincronizzazione</h3><p>I dati passano tra telefono, tablet e computer, e restano salvati anche online.</p></div>
+    <div><h3>Chiave dello studio</h3><p>Si entra con una chiave assegnata al singolo studio; gli spazi restano separati.</p></div>
+    <div><h3>Si installa come un'app</h3><p>Dal browser va sulla schermata Home, su telefono e sul computer, anche Mac e Windows.</p></div>
+   </div>
   </div>
  </div>
 </section>
@@ -190,7 +224,7 @@ footer .tag{margin-top:2px}
  <div class="wrap">
   <p class="kicker">Con il tuo nome</p>
   <h2>I clienti vedono <em>il tuo studio</em></h2>
-  <p>Logo, colori e nome del tuo studio su app, preventivi, contratti e gallerie. Per i tuoi clienti è la tua app, non la nostra.</p>
+  <p>Logo, colori e nome del tuo studio sull'app, sui preventivi, sui contratti, sulle ricevute e sulle gallerie. Per i tuoi clienti è la tua app, non la nostra.</p>
  </div>
 </section>
 
@@ -228,7 +262,7 @@ footer .tag{margin-top:2px}
   <div class="faq">
    <details><summary>Serve installare qualcosa?</summary><p>No. Frame for You si apre dal browser. Se vuoi averla a portata di mano, la aggiungi alla schermata Home del telefono o del computer e si comporta come una normale app, con la sua icona e gli aggiornamenti automatici.</p></details>
    <details><summary>Funziona su iPhone e Android?</summary><p>Sì, funziona su iPhone, Android, tablet e computer, sia Mac sia Windows. I dati si sincronizzano tra i dispositivi, quindi puoi iniziare un preventivo dal telefono e finirlo in studio.</p></details>
-   <details><summary>I miei clienti vedono il mio marchio?</summary><p>Sì. L'app viene preparata con il nome e il logo del tuo studio, che compaiono su preventivi, contratti, ricevute e gallerie. I clienti vedono il tuo studio, non Frame for You.</p></details>
+   <details><summary>I miei clienti vedono il mio marchio?</summary><p>Sì, il logo si vede. L'app si apre già con il nome e il marchio del tuo studio, e lo stesso logo compare su preventivi, contratti, ricevute e gallerie. I clienti vedono il tuo studio, non Frame for You.</p></details>
    <details><summary>I dati sono al sicuro?</summary><p>Ogni studio ha uno spazio separato e si accede con una chiave personale. I dati vengono salvati anche online, le gallerie si aprono solo con il codice del cliente e le connessioni sono cifrate tramite HTTPS.</p></details>
    <details><summary>Posso provarla prima di decidere?</summary><p>Sì. Scrivici su WhatsApp: prepariamo l'app con il nome del tuo studio e la usi per qualche giorno sui tuoi eventi reali, poi decidi con calma.</p></details>
   </div>
