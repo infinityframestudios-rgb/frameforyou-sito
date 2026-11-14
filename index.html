@@ -66,7 +66,20 @@ footer .sign{color:var(--gold2);font-family:"Playfair Display",serif;font-style:
  box-shadow:0 10px 30px rgba(0,0,0,.6);gap:10px;align-items:center;opacity:0;transform:translateY(20px);pointer-events:none;transition:.25s}
 .float.on{opacity:1;transform:none;pointer-events:auto}
 .float svg{width:20px;height:20px}
+.prose{max-width:680px;margin-top:18px;color:var(--muted);font-size:16.5px}
+.prose p+p{margin-top:14px}
+.points{display:grid;gap:0;margin-top:30px;border-top:1px solid var(--line)}
+.points div{padding:18px 0;border-bottom:1px solid var(--line)}
+.points h3{font:700 18px/1.3 "Playfair Display",Georgia,serif;color:#fff;margin-bottom:4px}
+.points p{color:var(--muted);font-size:15px}
+.safe{list-style:none;margin-top:26px;display:grid;gap:14px;max-width:720px}
+.safe li{position:relative;padding-left:30px;color:var(--muted);font-size:15.5px}
+.safe li b{color:var(--txt);font-weight:600}
+.safe li:before{content:"";position:absolute;left:4px;top:.55em;width:9px;height:9px;border:1.5px solid var(--gold);transform:rotate(45deg)}
+.note{margin-top:22px;font-size:13.5px;color:#8a8473;max-width:680px}
+footer .tag{margin-top:2px}
 @media(min-width:720px){
+ .points{grid-template-columns:1fr 1fr;column-gap:48px}
  .grid{grid-template-columns:1fr 1fr}
  .steps{grid-template-columns:repeat(3,1fr)}
  .hero{padding-top:70px;padding-bottom:80px}
@@ -107,6 +120,17 @@ footer .sign{color:var(--gold2);font-family:"Playfair Display",serif;font-style:
 
 <section>
  <div class="wrap">
+  <p class="kicker">Il progetto</p>
+  <h2>Un gestionale pensato <em>per chi lavora agli eventi</em></h2>
+  <div class="prose">
+   <p>Frame for You è un gestionale per studi fotografici che lavorano a matrimoni, battesimi, comunioni e feste private. È nato sul campo, dalle esigenze di chi passa il fine settimana tra chiesa e sala ricevimenti e il resto della settimana tra preventivi, acconti e consegne.</p>
+   <p>L'idea è riunire in un unico strumento ciò che di solito resta sparso tra agende, fogli di calcolo, chat e cartelle condivise. Meno tempo dietro alla parte amministrativa, più attenzione al lavoro che i clienti ricorderanno.</p>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
   <p class="kicker">Cosa trovi dentro</p>
   <h2>Dal primo contatto <em>alla consegna</em></h2>
   <div class="grid">
@@ -120,11 +144,41 @@ footer .sign{color:var(--gold2);font-family:"Playfair Display",serif;font-style:
  </div>
 </section>
 
+<section>
+ <div class="wrap">
+  <p class="kicker">Perché Frame for You</p>
+  <h2>Vantaggi <em>concreti</em>, ogni giorno</h2>
+  <div class="points">
+   <div><h3>Tempo ritrovato</h3><p>Preventivi, contratti e ricevute si compilano a partire dai dati già inseriti. Nessuna informazione va riscritta due volte.</p></div>
+   <div><h3>Un'immagine curata</h3><p>Documenti e gallerie arrivano ai clienti con il marchio dello studio, ordinati e coerenti in ogni dettaglio.</p></div>
+   <div><h3>Tutto in un unico posto</h3><p>Clienti, date, pagamenti e consegne restano collegati tra loro e si ritrovano in pochi secondi.</p></div>
+   <div><h3>Su ogni dispositivo</h3><p>Si usa da telefono, tablet e computer, in studio come in trasferta, senza programmi da installare.</p></div>
+   <div><h3>Sempre aggiornata</h3><p>Lo strumento cresce insieme a chi lo usa: miglioramenti e nuove funzioni arrivano in automatico.</p></div>
+   <div><h3>Assistenza diretta</h3><p>Per dubbi o richieste risponde lo Staff, di persona, senza centralini né moduli da compilare.</p></div>
+  </div>
+ </div>
+</section>
+
 <section class="band">
  <div class="wrap">
   <p class="kicker">Con il tuo nome</p>
   <h2>I clienti vedono <em>il tuo studio</em></h2>
   <p>Logo, colori e nome del tuo studio su app, preventivi, contratti e gallerie. Per i tuoi clienti è la tua app, non la nostra.</p>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <p class="kicker">Sicurezza e riservatezza</p>
+  <h2>I dati dello studio, <em>al riparo</em></h2>
+  <div class="prose"><p>Chi lavora con le famiglie e gli sposi custodisce nomi, recapiti, date e fotografie. Frame for You è costruito per trattarli con la cura che meritano.</p></div>
+  <ul class="safe">
+   <li><b>Spazi separati.</b> Ogni fotografo lavora nel proprio spazio: i dati di uno studio non sono visibili agli altri.</li>
+   <li><b>Accesso personale.</b> Si entra con una chiave assegnata al singolo studio.</li>
+   <li><b>Backup online.</b> Il lavoro viene salvato anche in rete, così non dipende da un solo dispositivo.</li>
+   <li><b>Gallerie protette.</b> Le foto dei clienti si aprono soltanto con il codice fornito dallo studio.</li>
+   <li><b>Connessione cifrata.</b> Ogni comunicazione con l'app passa tramite HTTPS.</li>
+  </ul>
  </div>
 </section>
 
@@ -153,7 +207,8 @@ footer .sign{color:var(--gold2);font-family:"Playfair Display",serif;font-style:
 
 <footer>
   <p class="sign">Staff Frame for You</p>
-  <p>© 2026 Frame for You</p>
+  <p>© 2026 Frame for You. Tutti i diritti riservati.</p>
+  <p class="tag">Gestionale per studi fotografici di eventi</p>
 </footer>
 
 <a class="float" id="float" href="https://wa.me/393472566851?text=Ciao%2C%20vorrei%20provare%20Frame%20for%20You" target="_blank" rel="noopener">
